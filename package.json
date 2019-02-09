@@ -1,0 +1,32 @@
+{
+  "name": "no-flicker-loading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "@types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "watch": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-typescript": "7.1.0",
+    "@types/jest": "24.0.0",
+    "babel-jest": "24.1.0",
+    "husky": "1.3.1",
+    "jest": "24.1.0",
+    "prettier": "1.16.4",
+    "pretty-quick": "1.10.0",
+    "typescript": "3.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

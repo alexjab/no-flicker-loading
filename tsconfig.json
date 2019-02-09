@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "esnext",
+    "module": "esnext",
+    "declaration": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true
+  },
+  "include": ["./src/*.ts"]
+}
