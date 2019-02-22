@@ -6,7 +6,6 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:10.15.1
 
     working_directory: ~/no-flicker-loading
@@ -29,6 +28,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm run build
-
-      # run tests!
       - run: npm test
+      - run: codecov

@@ -2,6 +2,9 @@
 
 :no_entry_sign::zap::hourglass_flowing_sand: Show loading without the dreaded flickering (or flashing) effect.
 
+[![CircleCI](https://circleci.com/gh/alexjab/no-flicker-loading.svg?style=svg)](https://circleci.com/gh/alexjab/no-flicker-loading)
+[![codecov](https://codecov.io/gh/alexjab/no-flicker-loading/branch/master/graph/badge.svg)](https://codecov.io/gh/alexjab/no-flicker-loading)
+
 ## TLDR
 
 Installation:
