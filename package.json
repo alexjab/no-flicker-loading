@@ -1,6 +1,6 @@
 {
   "name": "no-flicker-loading",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "@types": "lib/index.d.ts",
@@ -12,6 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": "github:alexjab/no-flicker-loading",
   "devDependencies": {
     "@babel/core": "7.2.2",
     "@babel/preset-env": "7.3.1",
