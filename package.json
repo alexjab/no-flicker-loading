@@ -1,6 +1,6 @@
 {
   "name": "no-flicker-loading",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/index.js",
   "@types": "lib/index.d.ts",
@@ -9,6 +9,10 @@
     "watch": "tsc --watch",
     "build": "tsc"
   },
+  "files": [
+    "./lib/index.js",
+    "./lib/index.d.ts"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

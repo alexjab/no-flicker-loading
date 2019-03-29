@@ -18,12 +18,21 @@ Usage example:
 ```javascript
 import noFlickerLoading from 'no-flicker-loading'
 
-const fn = async () => {
+// Your loading function
+const setLoading = isLoading => {
+  console.log(isLoading ? 'Loading...' : 'Done.')
+}
+
+// Your async call
+const fetchMyData = async () => {
+  return 'Hello world'
+}
+
+const main = async () => {
   const data = await noFlickerLoading(
     async () => {
       /* This is your "long" async call */
-      const result = await fetchMyData()
-      return result
+      return await fetchMyData()
     },
     () => {
       /* This function called only when loading should be displayed */
@@ -32,9 +41,18 @@ const fn = async () => {
   )
 
   setLoading(false)
-
-  /* Do something with the data */
 }
+
+main()
+```
+
+You can find a fully fledged working example in `./example`:
+
+```
+cd ./example
+npm i
+npm start
+# Go to http://localhost:1234
 ```
 
 ## API
